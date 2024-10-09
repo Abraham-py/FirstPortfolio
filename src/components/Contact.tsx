@@ -21,7 +21,7 @@ const Contact: React.FC<ContactProps> = ({ email, linkedin, github }) => {
         <li>
           <strong>LinkedIn:</strong>{' '}
           <a
-            href={linkedin}
+            href={`https://linkedin.com/in/:${linkedin}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline dark:text-blue-400"
@@ -32,7 +32,7 @@ const Contact: React.FC<ContactProps> = ({ email, linkedin, github }) => {
         <li>
           <strong>GitHub:</strong>{' '}
           <a
-            href={github}
+            href={`https://linkedin.com/in/:${github}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline dark:text-blue-400"

@@ -1,4 +1,6 @@
 import React from 'react';
+import { notify } from '../logicComponents/notification';
+import { ToastContainer } from 'react-toastify';
 
 interface Technology {
   name: string;
@@ -31,6 +33,7 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
               <a
                 href={project.link}
+                onClick={notify}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-blue-500 hover:underline dark:text-blue-400 transition-colors duration-300 hover:text-blue-700"
@@ -46,5 +49,6 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           </div>
         ))}
       </div>
+      <ToastContainer/>
     </section>
 )};
