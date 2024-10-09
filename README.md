@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Memoria actualizada
+Aquí tienes un ejemplo de un README para tu proyecto de portafolio en GitHub, tanto en español como en inglés:
 
-Currently, two official plugins are available:
+🌟 Mi Portafolio Personal
+Este es un proyecto en desarrollo que refleja parte del conocimiento y habilidades que he ido adquiriendo. El objetivo es crear una plataforma donde pueda mostrar mi trabajo, habilidades y proyectos. Acepto sugerencias y consejos para mejorar, ya que este proyecto está en sus primeras etapas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tecnologías utilizadas
+React JS con Vite
+TypeScript
+Tailwind CSS
 
-## Expanding the ESLint configuration
+🛠 Instalación
+Clona este repositorio:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+bash
+Copiar código
+git clone https://github.com/tu-usuario/mi-portafolio.git
 
-- Configure the top-level `parserOptions` property like this:
+Navega al directorio del proyecto:
+bash
+Copiar código
+cd mi-portafolio
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Instala las dependencias:
+bash
+Copiar código
+npm install
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Inicia el servidor de desarrollo:
+bash
+Copiar código
+npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+📚 Sobre el proyecto
+Este portafolio incluirá una sección de proyectos, sobre mi y habilidades. El diseño será minimalista y optimizado para la mejor experiencia de usuario posible.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+💬 Feedback
+Agradezco cualquier sugerencia o comentario sobre cómo puedo mejorar el proyecto, ya que es una oportunidad para seguir aprendiendo y perfeccionando mis habilidades. ¡Toda crítica constructiva es bienvenida!
