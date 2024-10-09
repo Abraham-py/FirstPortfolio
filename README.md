@@ -1,7 +1,4 @@
 
-Memoria actualizada
-Aquí tienes un ejemplo de un README para tu proyecto de portafolio en GitHub, tanto en español como en inglés:
-
 🌟 Mi Portafolio Personal
 Este es un proyecto en desarrollo que refleja parte del conocimiento y habilidades que he ido adquiriendo. El objetivo es crear una plataforma donde pueda mostrar mi trabajo, habilidades y proyectos. Acepto sugerencias y consejos para mejorar, ya que este proyecto está en sus primeras etapas.
 
