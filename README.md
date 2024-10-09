@@ -7,28 +7,6 @@ React JS con Vite
 TypeScript
 Tailwind CSS
 
-🛠 Instalación
-Clona este repositorio:
-
-bash
-Copiar código
-git clone https://github.com/tu-usuario/mi-portafolio.git
-
-Navega al directorio del proyecto:
-bash
-Copiar código
-cd mi-portafolio
-
-Instala las dependencias:
-bash
-Copiar código
-npm install
-
-Inicia el servidor de desarrollo:
-bash
-Copiar código
-npm run dev
-
 📚 Sobre el proyecto
 Este portafolio incluirá una sección de proyectos, sobre mi y habilidades. El diseño será minimalista y optimizado para la mejor experiencia de usuario posible.
 
