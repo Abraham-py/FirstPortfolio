@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <section id='intro' className="scroll-m-16 max-w-3/5 mb-12 flex flex-col items-center justify-center">
         <Intro name='Abraham'/> 
         <div className="flex flex-col justify-center align-middle items-center w-full">
-          <SocialButtons LinkedIn='abraham-de-jesús-rodríguez-rodríguez-091a65299' Github='Abraham-py' Twitter='Abraham08761215'/>
+          <SocialButtons linkedin='abraham-de-jesús-rodríguez-rodríguez-091a65299' github='Abraham-py' twitter='Abraham08761215'/>
           <GenericButton mail='' ButtonText='Mail'/> 
         </div>
       </section>

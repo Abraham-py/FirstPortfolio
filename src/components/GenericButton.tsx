@@ -2,7 +2,7 @@ import React from 'react'
 import { Mail } from 'lucide-react'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { notify } from '../logicComponents/notification';
+import { notify } from './logicComponents/notification';
 
 
 interface Props {

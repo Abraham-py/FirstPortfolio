@@ -1,5 +1,5 @@
 import React from 'react';
-import { notify } from '../logicComponents/notification';
+import { notify } from './logicComponents/notification';
 import { ToastContainer } from 'react-toastify';
 
 interface Technology {
