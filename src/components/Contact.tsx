@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ContactProps {
   email: string;
@@ -13,13 +13,16 @@ const Contact: React.FC<ContactProps> = ({ email, linkedin, github }) => {
       <p className="mb-4">¿Interesado en trabajar juntos? ¡Contáctame!</p>
       <ul className="space-y-2">
         <li>
-          <strong>Email:</strong>{' '}
-          <a href={`mailto:${email}`} className="text-blue-500 hover:underline dark:text-blue-400">
+          <strong>Email:</strong>{" "}
+          <a
+            href={`mailto:${email}`}
+            className="text-blue-500 hover:underline dark:text-blue-400"
+          >
             {email}
           </a>
         </li>
         <li>
-          <strong>LinkedIn:</strong>{' '}
+          <strong>LinkedIn:</strong>{" "}
           <a
             href={`https://linkedin.com/in/:${linkedin}`}
             target="_blank"
@@ -30,7 +33,7 @@ const Contact: React.FC<ContactProps> = ({ email, linkedin, github }) => {
           </a>
         </li>
         <li>
-          <strong>GitHub:</strong>{' '}
+          <strong>GitHub:</strong>{" "}
           <a
             href={`https://linkedin.com/in/:${github}`}
             target="_blank"

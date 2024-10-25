@@ -1,8 +1,11 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./src/**/*.{js,ts,tsx}'],
+  purge: ['./src/**/*.{js,ts,tsx}', './PortfolioProject/**/*.{js,ts,tsx,html}'],
   theme: {
     extend: {
+      screens: {
+        'air': '820px', // Añadir un nuevo breakpoint para pantallas muy pequeñas
+      },
       keyframes: {
         'grow-shrink': {
           '0%, 100%': { transform: 'scale(1)' },

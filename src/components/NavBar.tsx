@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 interface NavItem {
   name: string;
@@ -16,8 +16,8 @@ interface NavBarProps {
 ////////////////////////////////////////////////////////////////////////////
 const NavBar: React.FC<NavBarProps> = ({ title, navItems }) => {
   const [darkMode] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') === 'dark';
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "dark";
     }
     return false;
   });
@@ -25,18 +25,18 @@ const NavBar: React.FC<NavBarProps> = ({ title, navItems }) => {
 
   useEffect(() => {
     if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
 
   const scrollToSection = (sectionId: string): void => {
     const section = document.getElementById(sectionId.slice(1));
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false);
   };
@@ -52,12 +52,11 @@ const NavBar: React.FC<NavBarProps> = ({ title, navItems }) => {
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
   ///////////////////////////////////////////////////////////////////////////////
   //////////////////////renderizado del componente///////////////////////
@@ -65,7 +64,9 @@ const NavBar: React.FC<NavBarProps> = ({ title, navItems }) => {
   return (
     <nav className="sticky top-0 mt-2 bg-white/30 dark:bg-gray-800/30 backdrop-blur-md shadow-md z-10 transition-colors duration-300 rounded-full">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="ml-10 text-3xl font-bold text-blue-500">&lt;{title}/&gt;</h1>
+        <h1 className="ml-10 text-2xl pr-2 font-bold text-blue-500">
+          &lt;{title}/&gt;
+        </h1>
         <div className="flex items-center">
           <button
             onClick={toggleMenu}
@@ -73,13 +74,18 @@ const NavBar: React.FC<NavBarProps> = ({ title, navItems }) => {
             aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {isMenuOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </button>
           <div
-            className={`md:flex md:space-x-4 ${isMenuOpen
-              ? 'absolute top-full left-0 right-0 mt-2 bg-white/50 dark:bg-gray-800/50 backdrop-blur-md rounded-xl p-3 shadow-lg'
-              : 'hidden md:flex'
-              }`}
+            className={`md:flex md:space-x-4 ${
+              isMenuOpen
+                ? "absolute top-full left-0 right-0 mt-2 bg-white/50 dark:bg-gray-800 backdrop-blur-md rounded-xl p-3 shadow-lg"
+                : "hidden md:flex"
+            }`}
           >
             {navItems.map((item) => (
               <button
