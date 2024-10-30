@@ -1,4 +1,4 @@
-// TechnologyList.tsx
+
 import React from "react";
 import { Technology } from "../types/types.ts";
 

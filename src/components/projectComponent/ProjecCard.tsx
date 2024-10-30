@@ -1,4 +1,4 @@
-// ProjectCard.tsx
+
 import React from "react";
 import { TechnologyList } from "./TechnologyList";
 import { notify } from "../logicComponents/notification";

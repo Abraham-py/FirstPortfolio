@@ -1,4 +1,4 @@
-// ProjectList.tsx
+
 import React from "react";
 import { ProjectCard } from "./ProjecCard";
 import { Project } from "../types/types";

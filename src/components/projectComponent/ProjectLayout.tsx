@@ -1,4 +1,4 @@
-// Projects.tsx
+
 import React from "react";
 import { ToastContainer } from "react-toastify";
 import { ProjectList } from "./ProjectList";
