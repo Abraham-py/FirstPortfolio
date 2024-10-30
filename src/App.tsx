@@ -1,14 +1,14 @@
 import React from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/UIcomponents/NavBar.tsx";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
-import GenericButton from "./components/GenericButton.tsx";
+import GenericButton from "./components/UIcomponents/GenericButton.tsx";
 import { ProjectLayout } from "./components/projectComponent/ProjectLayout.tsx";
-import Skills from "./components/Skills";
-import About from "./components/About";
+import Skills from "./components/Skills/Skills.tsx";
+import About from "./components/About/About.tsx";
 import Contact from "./components/Contact";
 import { tchProject1, tchProject2, tchProject3, svgSkills } from "./img/svg.ts";
-import SocialButtons from "./components/SocialButtons.tsx";
+import SocialButtons from "./components/UIcomponents/SocialButtons.tsx";
 
 const App: React.FC = () => {
   return (
