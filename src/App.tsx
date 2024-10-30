@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import GenericButton from "./components/GenericButton.tsx";
-import { Projects } from "./components/Projects";
+import { ProjectLayout } from "./components/projectComponent/ProjectLayout.tsx";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -38,7 +38,7 @@ const App: React.FC = () => {
           </div>
         </section>
         <section id="projects" className="p-2 justify-between  scroll-m-16">
-          <Projects
+          <ProjectLayout
             projects={[
               {
                 id: 1,
